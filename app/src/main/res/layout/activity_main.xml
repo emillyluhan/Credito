@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Encabezado Rojo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#D0021B"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simuladores"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Título principal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Crédito Hipotecario en Colombia"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- Campo: Valor de la propiedad -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="* Valor de la propiedad"
+            android:textColor="#D0021B"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtValorPropiedad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:hint="100.000.000"
+            android:inputType="number"
+            android:padding="16dp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="El valor de la propiedad no puede ser inferior a $70.000.000"
+            android:textSize="12sp" />
+
+        <!-- Campo: ¿Cuánto necesitas? -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="* ¿Cuánto necesitas?"
+            android:textColor="#D0021B"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtCuantoNecesitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:hint="70.000.000"
+            android:inputType="number"
+            android:padding="16dp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="El préstamo mínimo es de $50.000.000 y no puede exceder el 70% del valor de la propiedad para créditos hipotecarios, mientras que para leasing habitacional no puede exceder el 80% del valor de la propiedad."
+            android:textSize="12sp" />
+
+        <!-- Campo: ¿A qué plazo necesitas el crédito? -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="* ¿A qué plazo necesitas el crédito (años)?"
+            android:textColor="#D0021B"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtPlazo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:hint="5"
+            android:inputType="number"
+            android:padding="16dp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="Van desde los 5 hasta los 20 años. El plazo más común es de 20 años."
+            android:textSize="12sp" />
+
+        <!-- Campo: ¿A qué tasa de interés efectiva anual (TAE)? -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="* ¿A qué tasa de interés efectiva anual (TAE)?"
+            android:textColor="#D0021B"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtTasaInteres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:hint="14.03"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="Esta tasa depende de tu historial crediticio y del banco en el que pidas el crédito."
+            android:textSize="12sp" />
+
+        <!-- Botón Simular -->
+        <Button
+            android:id="@+id/btnSimular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:backgroundTint="#D0021B"
+            android:text="Simular"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
